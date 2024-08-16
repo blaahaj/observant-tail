@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "incremental": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "strictNullChecks": true,
+    "target": "ESNext",
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": ["src/*.mts"]
+}
