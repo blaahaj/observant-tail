@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { ScanAndTail } from "./scanAndTail.mjs";
 import { onSigIntOrTerm } from "./onSigIntOrTerm.mjs";
 

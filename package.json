@@ -6,6 +6,9 @@
   "license": "MIT",
   "author": "Rachel Evans <rachel@rachelevans.org>",
   "main": "dist/src/index.mjs",
+  "bin": {
+    "observant-tail": "dist/src/index.mjs"
+  },
   "scripts": {
     "build": "set -ve ; yarn run lint ; tsc",
     "build:watch": "rebuild --exclude=dist --exclude=node_modules . -- sh -c 'sleep 1 && yarn run build'",
@@ -17,6 +20,10 @@
   "dependencies": {
     "parcel": "^2.12.0"
   },
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
   "devDependencies": {
     "@types/node": "^22.1.0",
     "@typescript-eslint/eslint-plugin": "^8.0.1",
